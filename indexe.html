@@ -1,0 +1,34 @@
+<?php include './easycontactform/index.php'; ?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">    
+    <title>test</title>
+</head>
+<body>
+    
+
+
+<div class="contact-form-div">
+  <div class="flash-div <?php if (isset($_SESSION['mail_status'])) echo ($_SESSION['mail_status'] ? 'mail-sent-true' : 'mail-sent-false'); ?> ">
+    <?php if (isset($_SESSION['flash'])) { echo $_SESSION['flash']; unset($_SESSION['flash']); } ?>
+  </div>
+  <form id="contact" method="POST">
+    <input name="name" type="text" placeholder="Your Name*" required autofocus />
+    <input id="m66" name="m66" type="email" placeholder="Your Valid Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+    <input id="m77" name="m77" type="email" placeholder="Your Valid Email*" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+    <input name="subject" type="text" placeholder="The Subject*" required />
+    <textarea name="message" placeholder="Message Body*" rows="10" required></textarea>
+    <div class="kcaptcha-div">
+      <img src="./easycontactform/kcaptcha/?<?php echo session_name()?>=<?php echo session_id()?>">
+      <div>
+        <a class="credits-link" href="https://easyphpcontactform.com" target="_blank">Credits: easyphpcontactform.com</a>
+        <input type="text" name="keystring" placeholder="Image Code *" />
+      </div>
+    </div>
+    <input type="submit" value="submit" />
+  </form>
+</div></body>
+</html>

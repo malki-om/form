@@ -1,0 +1,103 @@
+/* Placeholder colors */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #9b9b9b;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #9b9b9b;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #9b9b9b;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #9b9b9b;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #9b9b9b;
+}
+
+.flash-div { margin-left: 0.5rem;}
+.mail-sent-true { color: #009933; }
+.mail-sent-false { color: #cc0000; }
+
+textarea::placeholder { color: #9b9b9b; font-family: arial; }
+
+/* Colors for focused fields */
+
+input[type=text], input[type=email], textarea {
+  outline: none;
+  border: 1px solid #9b9b9b;
+}
+ 
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  border: 1px solid #00C5BE;
+}
+
+/* Input styling */
+
+textarea {
+   font-family: arial;
+   width: 27rem;
+   font-size: 1rem;
+   padding: 0.6rem;
+   margin-right: 0.5rem;
+   margin-left: 0.5rem;
+   border-radius: 5px;
+   border: 1px solid #9b9b9b;
+   color: #4c4c4c !important;
+}
+
+.contact-form-div input {
+   display: block;
+   font-size: 1rem;
+   width: 27rem;
+   padding: 0.6rem;
+   margin: 0.5rem;
+   border-radius: 5px;
+   border: 1px solid #9b9b9b;
+   color: #4c4c4c !important;
+}
+
+.contact-form-div input[type=submit] {
+   width: auto;
+   background-color: #00C5BE;
+   border: none;
+   color: #fff !important;
+   font-size: 1em;
+   padding: 10px 50px;
+   text-transform: uppercase;
+   font-weight: normal;
+}
+
+/* Honeypot technique, hide the fake field */
+
+#m66 {
+   display: none;
+}
+
+.kcaptcha-div {
+   display: flex;
+   width: 27rem;
+   padding: 0.6rem;
+}
+
+.kcaptcha-div img { width: 160px; height: 80px; border: 1px solid #9b9b9b; }
+.kcaptcha-input-div { width: 255px; }
+.credits-link { font-size: 0.8rem; margin-left: 13%; }
+.kcaptcha-div input { width: 235px; }
+
+/* General page styling */
+
+body {
+   font-family: arial;
+   color: #4c4c4c;
+}
+
+h1 {
+   margin-left: 0.5rem;
+}
+
+p {
+   margin-left: 0.5rem;
+}
