@@ -20,7 +20,7 @@
 			$title = "Contact Form: $subject";
 			$message_body = "Message: $message";
 			$mailheader = "From: $email \r\n";
-			$titles = 'From: contactform@easyphpcontactscript.com.' . "\r\n" .
+			$titles = 'From: form@github.com/malki-om/form.git' . "\r\n" .
 			    "Reply-To: " . $email . "\r\n" .
 			    'X-Mailer: PHP/' .phpversion();
 
